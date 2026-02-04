@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let toltal = 0;
+      const numbers = [100, 200, 300, 400];
+
+      console.log("Vong For of: ");
+      for (const value of numbers) {
+        console.log(value);
+      }
+
+      console.log("Vong For in: ");
+      for (const number in numbers) {
+        console.log(number);
+      }
+
+      for (let i = 0; i < numbers.length; i++) {
+        if (i % 2 === 0) {
+          toltal += numbers[i];
+        }
+      }
+      console.log("Tong cac so chan la: ", toltal);
+    </script>
+  </body>
+</html>
